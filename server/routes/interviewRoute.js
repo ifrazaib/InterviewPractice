@@ -1,8 +1,10 @@
 const express = require('express');
-const { handleAnswerEvaluation } = require('../controllers/evaluateController');
+const upload = require('../middlewares/upload.js');
+const { handleInterviewStart } = require('../controllers/interviewController.js');
 
 const router = express.Router();
 
-router.post('/evaluate', handleAnswerEvaluation);
+// ✅ Route to upload CV and get questions
+router.post('/start', upload.single('cv'), handleInterviewStart);
 
 module.exports = router;

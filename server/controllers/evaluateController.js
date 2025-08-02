@@ -8,11 +8,12 @@ const handleAnswerEvaluation = async (req, res) => {
       return res.status(400).json({ message: 'Questions, answers, and role are required' });
     }
 
-    const feedback = await evaluateAnswersWithGROQ(questions, answers, role);
+    const feedbackMarkdown = await evaluateAnswersWithGROQ(questions, answers, role);
 
-    res.status(200).json({ feedback });
+    // Optional: You can parse the markdown into structured data later if needed
+    res.status(200).json({ feedback: feedbackMarkdown });
   } catch (err) {
-    console.error(err);
+    console.error('Error in evaluation:', err);
     res.status(500).json({
       message: 'Error evaluating answers',
       error: err.message,
@@ -21,5 +22,5 @@ const handleAnswerEvaluation = async (req, res) => {
 };
 
 module.exports = {
-    handleAnswerEvaluation,
+  handleAnswerEvaluation,
 };

@@ -8,7 +8,7 @@ const fs = require('fs');
 // function to store CV pdf files.
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    const uploadPath = '../uploads';
+    const uploadPath = './uploads';
     if (!fs.existsSync(uploadPath)) fs.mkdirSync(uploadPath);
     cb(null, uploadPath);
   },
