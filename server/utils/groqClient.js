@@ -5,7 +5,25 @@ dotenv.config();
 
 const generateQuestionsFromCV = async (cvText, role) => {
   const prompt = `
-You are an AI interviewer. Based on the following candidate CV and the role of "${role}", generate 5 relevant technical and behavioral interview questions: and make sure that only questions are given noa a sinlge extra word other than questions are required
+Act strictly as an AI interviewer.
+
+Your task:
+- Based on the following candidate CV and the job role of "${role}", generate exactly 5 interview questions.
+- The questions must be a mix of technical and behavioral, directly relevant to the role.
+
+Strict instructions:
+- DO NOT include any introduction, summary, explanation, or extra phrases.
+- DO NOT say things like "Here are the questions".
+- DO NOT include anything before question one.
+- Your response must begin with:
+  1- <question>
+  2- <question>
+  3- <question>
+  4- <question>
+  5- <question>
+  must be 5 questions
+Only output this format. Anything else is incorrect.
+
 
 ---CV START---
 ${cvText}

@@ -19,7 +19,7 @@ const app = express();
 dotenv.config();
 
 // connecting to database...
-//connectDB();
+connectDB();
 
 
 
