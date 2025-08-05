@@ -1,0 +1,340 @@
+.combined-interview-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* CV Upload Section */
+.cv-upload-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cv-upload-section h1 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.cv-upload-section p {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.file-upload-box {
+  margin: 2rem 0;
+}
+
+.file-upload-box input[type="file"] {
+  display: none;
+}
+
+.file-upload-box label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 2px dashed #3498db;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.file-upload-box label:hover {
+  background: #f8f9fa;
+}
+
+.browse-button {
+  background: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/* Video Interview Section */
+.video-interview-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.progress-indicator {
+  background: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.question-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #3498db;
+}
+
+.question-card h2 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.countdown-timer {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.video-container {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.record-button, .stop-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.record-button {
+  background: #3498db;
+  color: white;
+}
+
+.record-button:hover {
+  background: #2980b9;
+}
+
+.stop-button {
+  background: #e74c3c;
+  color: white;
+}
+
+.stop-button:hover {
+  background: #c0392b;
+}
+
+.recorded-video {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+.answer-review {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Transcription styles */
+.transcription-result {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.transcription-result h4 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.transcribing {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.transcribed-text {
+  white-space: pre-wrap;
+  line-height: 1.5;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Feedback Section */
+.feedback-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-section h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feedback-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.feedback-card h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.score-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.score {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3498db;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.metric {
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.metric span:last-child {
+  font-weight: 600;
+  color: #3498db;
+}
+
+/* Buttons */
+.primary-button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 0.5rem;
+}
+
+.primary-button:hover {
+  background: #2980b9;
+}
+
+.secondary-button {
+  background: white;
+  color: #3498db;
+  border: 2px solid #3498db;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 0.5rem;
+}
+
+.secondary-button:hover {
+  background: #f8f9fa;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.submit-button {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background: #27ae60;
+}
+
+.submit-button:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feedback-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .video-interview-section, .cv-upload-section, .feedback-section {
+    padding: 1rem;
+  }
+}

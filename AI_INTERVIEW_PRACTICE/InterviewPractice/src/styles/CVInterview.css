@@ -1,0 +1,366 @@
+/* CVInterview.css */
+.cv-interview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  padding: 2rem;
+}
+
+.cv-interview-card {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.cv-interview-title {
+  color: #2a5298;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.cv-interview-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #444;
+}
+
+.form-input {
+  padding: 0.8rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.form-input:focus {
+  border-color: #2a5298;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.2);
+}
+
+.file-upload-box {
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.file-upload-box:hover {
+  border-color: #2a5298;
+}
+
+.file-input {
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.file-upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: #666;
+  font-size: 1rem;
+}
+
+.browse-button {
+  background: #2a5298;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.browse-button:hover {
+  background: #1e3c72;
+  transform: translateY(-1px);
+}
+
+.upload-button {
+  margin-top: 1rem;
+  background: #2a5298;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  max-width: 250px;
+  align-self: center;
+}
+
+.upload-button:hover {
+  background: #1e3c72;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background: #eee;
+  border-radius: 8px;
+  height: 20px;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  transition: width 0.3s;
+}
+
+.progress-bar-container span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.questions-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.questions-title {
+  color: #2a5298;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.question-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.question-text {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.answer-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-height: 100px;
+  resize: vertical;
+  transition: all 0.3s;
+}
+
+.answer-input:focus {
+  border-color: #2a5298;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.2);
+}
+
+.submit-button {
+  background: #2a5298;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background: #1e3c72;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.feedback-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feedback-title {
+  color: #2a5298;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.feedback-content {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.score-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.score-value {
+  font-weight: 700;
+  color: #2a5298;
+  font-size: 1.4rem;
+}
+
+.feedback-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feedback-details h3 {
+  color: #2a5298;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.feedback-details ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feedback-details li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.feedback-details p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-btn, .restart-btn {
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.dashboard-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.dashboard-btn:hover {
+  background: #5a6268;
+  transform: translateY(-2px);
+}
+
+.restart-btn {
+  background: #2a5298;
+  color: white;
+}
+
+.restart-btn:hover {
+  background: #1e3c72;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .cv-interview-card {
+    padding: 1.5rem;
+  }
+  
+  .cv-interview-title {
+    font-size: 1.8rem;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .dashboard-btn, .restart-btn {
+    width: 100%;
+  }
+}
